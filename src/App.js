@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+import {useEffect} from 'react'
 import './App.css';
 
-function App() {
+const App = ()=> {
+
+const onLoading = async(title)=>{
+  const api = await fetch(`http://omdbapi.com/?apikey=9eb261b1&s=${title}`)
+  const data = await api.json()
+   
+  console.log(data);
+}
+
+useEffect(()=>{
+  onLoading('Spiderman')
+},[])  
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     hello
     </div>
   );
 }

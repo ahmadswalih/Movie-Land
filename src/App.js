@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import SearchIcon from "./Search.svg";
 import MovieCard from "./components/MovieCard";
-import AboutMovie from "./components/AboutMovie";
 import "./App.css";
 
 const App = () => {
@@ -34,7 +33,7 @@ const App = () => {
       {movies.length > 0 ? (
         <div className="container">
           {movies.map((movie) => {
-            return <MovieCard key={movie.imdbID} movie={movie} onClick={()=>AboutMovie(movie)} />;
+            return <MovieCard key={movie.imdbID} movie={movie}  />;
           })}
         </div>
       ) : (

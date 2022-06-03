@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import SearchIcon from "./Search.svg";
 import MovieCard from "./components/MovieCard";
+import AboutMovie from "./components/AboutMovie";
 import "./App.css";
 
 const App = () => {
@@ -18,9 +19,10 @@ const App = () => {
     searchMovies("marvel");
   }, [searchTerm]);
 
+ 
   return (
     <div className="app">
-      <h1>MovieLand</h1>
+    <a href="/">  <h1>MovieLand</h1></a>
       <div className="search">
         <input
           placeholder="Search for movies"
@@ -32,8 +34,7 @@ const App = () => {
       {movies.length > 0 ? (
         <div className="container">
           {movies.map((movie) => {
-            console.log(movie);
-            return <MovieCard key={movie.imdbID} movie={movie} />;
+            return <MovieCard key={movie.imdbID} movie={movie} onClick={()=>AboutMovie(movie)} />;
           })}
         </div>
       ) : (

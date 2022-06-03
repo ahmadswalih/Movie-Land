@@ -229,3 +229,6 @@ h1 {
     margin: 1rem;
   }
 }
+a{
+  text-decoration: none;
+}

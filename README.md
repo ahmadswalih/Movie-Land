@@ -1,5 +1,54 @@
-## Movie Application
+<h1 align="center">Welcome to Movie Land 👋</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000" />
+  <a href="/license" target="_blank">
+    <img alt="License: mit" src="https://img.shields.io/badge/License-mit-yellow.svg" />
+  </a>
+</p>
 
-## <a href="https://movie-application-swa.netlify.app/">Have Look</a>
+> Movie land is a website , where user can search their favorite movies 
 
-Currently in the Production Phase
+### 🏠 [Homepage](src/App.js)
+
+### ✨ [Demo](https://movie-application-swa.netlify.app/)
+
+## Install
+
+```sh
+npm install
+```
+
+## Usage
+
+```sh
+npm run start
+```
+
+## Run tests
+
+```sh
+npm run test
+```
+
+## Author
+
+👤 **Ahmad Swalih**
+
+* Github: [@ahmadswalih](https://github.com/ahmadswalih)
+* LinkedIn: [@ahmad-swalih-cm-6429881b5](https://linkedin.com/in/ahmad-swalih-cm-6429881b5)
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](/issues). 
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+## 📝 License
+
+Copyright © 2022 [Ahmad Swalih](https://github.com/ahmadswalih).<br />
+This project is [mit](/license) licensed.
+
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_

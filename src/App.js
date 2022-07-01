@@ -5,10 +5,11 @@ import "./App.css";
 
 const App = () => {
   const [movies, setMovies] = useState([]);
-  const [searchTerm , setSearchTerm] = useState('')
+  const [searchTerm, setSearchTerm] = useState("");
 
   const searchMovies = async (title) => {
-    const api = await fetch(`https://omdbapi.com/?apikey=9eb261b1&s=${title}`);
+    const apiKey = process.env.REACT_APP_API_KEY;
+    const api = await fetch(`https://omdbapi.com/?apikey=${apiKey}&s=${title}`);
     const data = await api.json();
 
     setMovies(data.Search);
@@ -18,22 +19,28 @@ const App = () => {
     searchMovies("marvel");
   }, [searchTerm]);
 
- 
   return (
     <div className="app">
-    <a href="/">  <h1>MovieLand</h1></a>
+      <a href="/">
+        {" "}
+        <h1>MovieLand</h1>
+      </a>
       <div className="search">
         <input
           placeholder="Search for movies"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
         />
-        <img src={SearchIcon} alt="Search" onClick={() => searchMovies(searchTerm)} />
+        <img
+          src={SearchIcon}
+          alt="Search"
+          onClick={() => searchMovies(searchTerm)}
+        />
       </div>
       {movies.length > 0 ? (
         <div className="container">
           {movies.map((movie) => {
-            return <MovieCard key={movie.imdbID} movie={movie}  />;
+            return <MovieCard key={movie.imdbID} movie={movie} />;
           })}
         </div>
       ) : (

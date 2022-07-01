@@ -6,11 +6,11 @@
   </a>
 </p>
 
-> Movie land is a website , where user can search their favorite movies 
+> Movie land is a website , where user can search their favorite movies . The Application is using api from <a href="https://omdbapi.com/"> OMDB </a> website to fetch the movie data.
+
+## ✨ [Demo](https://movie-application-swa.netlify.app/)
 
 ### 🏠 [Homepage](src/App.js)
-
-### ✨ [Demo](https://movie-application-swa.netlify.app/)
 
 ## Install
 
@@ -34,12 +34,12 @@ npm run test
 
 👤 **Ahmad Swalih**
 
-* Github: [@ahmadswalih](https://github.com/ahmadswalih)
-* LinkedIn: [@ahmad-swalih-cm-6429881b5](https://linkedin.com/in/ahmad-swalih-cm-6429881b5)
+- Github: [@ahmadswalih](https://github.com/ahmadswalih)
+- LinkedIn: [@ahmad-swalih-cm-6429881b5](https://linkedin.com/in/ahmad-swalih-cm-6429881b5)
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](/issues). 
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](/issues).
 
 ## Show your support
 
@@ -50,5 +50,6 @@ Give a ⭐️ if this project helped you!
 Copyright © 2022 [Ahmad Swalih](https://github.com/ahmadswalih).<br />
 This project is [mit](/license) licensed.
 
-***
+---
+
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_

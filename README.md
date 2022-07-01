@@ -20,6 +20,8 @@ npm install
 
 ## Usage
 
+After cloning the file , add your OMDB apiKey in the dotenv file and use it in the <a href="https://github.com/ahmadswalih/movie-app/blob/master/src/App.js#L11"> Here </a>
+
 ```sh
 npm run start
 ```
@@ -29,6 +31,7 @@ npm run start
 ```sh
 npm run test
 ```
+
 
 ## Author
 

@@ -10,6 +10,13 @@
 
 ## ✨ [Demo](https://movie-application-swa.netlify.app/)
 
+## Features 
+
+     Modern UI 
+     Users can Search Movies
+     Uses Google Fonts
+     Hover Effect for Movie Cards
+
 ### 🏠 [Homepage](src/App.js)
 
 ## Install
